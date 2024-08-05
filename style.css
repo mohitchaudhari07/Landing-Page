@@ -1,0 +1,191 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.bg{
+   min-height:60vh;
+   max-height: 60vh;
+    width: 100%;
+    background-image: url("depth-of-field-1868535_1920.jpg");
+    background-size: cover;
+    
+}
+
+
+.bg .overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    
+    background-color: rgba(0, 0, 0, 0.511);
+
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
+    bottom: 10%;
+}
+.text h1{
+    font-weight: 600;
+    font-size: 4vw;
+}
+.text .image{
+    width: 300px;
+    height: 300px;
+    background-image: url("demo.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    
+}
+.rtext{
+    display: flex;
+    width: 25%;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.rtext p{
+    font-size: 20px;
+}
+.icon{
+    font-size: 20px;
+}
+
+.bottom{
+   
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+    
+}
+.b1{
+    width: 30%;
+    min-height: inherit;
+    background-image: url("eyeglasses.jpg");
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+.b2{
+    width: 30%;
+    min-height: inherit;
+}
+.b2 .up{
+    width: 100%;
+    height: 50%;
+    background-image: url("tree.jpg");
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+   
+
+}
+.b2 .down{
+    width: 100%;
+    min-height: 50%;
+    background-image: url("bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+
+}
+.b3{
+    position:relative;
+    width: 40%;
+    min-height: inherit;
+    background-image: url("eyeglasses245.jpg");
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.overlay2 p{
+    padding-top: 20px;
+   
+}
+.overlay2{
+    background-color: rgba(0, 0, 0, 0.412);
+    height: 100%;
+}
+
+
+
+@media(max-width:500px){
+   
+    .b1{
+        font-size: 1.50vh;
+    }
+    .b2 .up{
+        font-size: 1.25vh;
+    }
+}
+
+@media(max-width:710px){
+   
+    .b1{
+        font-size: 1.70vh;
+    }
+    .b2 .up{
+        font-size: 1.55vh;
+    }
+}
+
+
+@media(max-width: 1040px){
+
+    .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        padding: 0 10vh;
+        color: white;
+        bottom: 10%;
+    }
+    .text{
+        flex-direction: column;
+        align-items: center;
+    }
+    .text h1{
+        padding-bottom: 6px;
+        font-size: 5vh;
+    }
+    .text .image{
+        height: 140px;
+        width: 140px;
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 5px;
+    }
+    .rtext p{
+        align-self: center;
+        padding: 6px;
+    }
+    .icon{
+        padding: 6px;
+    }
+
+}
